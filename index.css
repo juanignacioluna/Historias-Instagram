@@ -1,0 +1,100 @@
+
+body{
+	background: #E6E6E6;
+}
+
+
+.titulo{
+	text-align: center;
+	font-family: Verdana, sans-serif;
+}
+
+.contenedor{
+	background: white;
+	width: 70%;
+	height: 150px;
+	margin: auto;
+	border: 1px solid #b3b3b3;
+	border-radius: 10px;
+
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+
+	display: flex;
+	align-items: center;
+}
+
+.fotoDePerfil img{
+
+	border: 3px solid #960672;
+	border-radius: 500px;
+	width: 90px;
+
+}
+
+.nombreDeUsuario{
+	font-family: system-ui, sans-serif;
+	color: #333333;
+	margin: 0;
+}
+
+.historia{
+	width: 100px;
+	text-align: center;
+	margin-left: 10px;
+	cursor: pointer;
+    user-select: none;
+    transition: transform .2s ease-in-out;
+}
+
+.historia:hover{
+	transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #adadad;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #575757;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+	.contenedor{
+		width: 90%;
+	}
+
+	.fotoDePerfil img{
+		width: 60px;
+	}
+
+}
